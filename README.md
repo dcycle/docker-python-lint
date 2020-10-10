@@ -4,7 +4,7 @@ Lint Python with [PyLint](https://www.pylint.org).
 
 For example:
 
-    docker run --rm -v $(pwd)/example:/app/code dcycle/python-lint --help
-    docker run --rm -v $(pwd)/example:/app/code dcycle/python-lint .
+    docker run --rm -v $(pwd)/example:/app/code dcycle/python-lint:1 --help
+    docker run --rm -v $(pwd)/example:/app/code dcycle/python-lint:1 .
 
 See [this project on the Docker Hub](https://hub.docker.com/r/dcycle/docker-python-lint/).
