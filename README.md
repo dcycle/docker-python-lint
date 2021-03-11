@@ -8,4 +8,9 @@ For example:
     docker run --rm -v $(pwd)/example:/app/code dcycle/python-lint:1 somefile.py
     find . -name "*.py" -print0 | tr '\n' '\0' | xargs -0 -I '$' docker run --rm -v $(pwd):/app/code dcycle/python-lint:1 /app/code/"$"
 
+To ignore a warning, place a comment before the offending line:
+
+    # pylint: disable=E0401
+    ...
+
 See [this project on the Docker Hub](https://hub.docker.com/r/dcycle/docker-python-lint/).
