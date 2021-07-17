@@ -2,7 +2,7 @@
 """This is a module docstring
 """
 
-class SomeClass(object):
+class SomeClass:
     """This is a class docstring
     """
 
@@ -10,9 +10,9 @@ class SomeClass(object):
     def some_method():
         """This is a method docstring
         """
-        print 'hello world'
+        print('hello world')
 
     def public_metho_one(self):
         """This is a method docstring
         """
-        print self.some_method()
+        print(self.some_method())
