@@ -1,5 +1,5 @@
 set -e
-docker pull ubuntu
+docker pull python:3-alpine
 docker build -t local-dcycle-python-lint-image .
 
 echo "=>"
